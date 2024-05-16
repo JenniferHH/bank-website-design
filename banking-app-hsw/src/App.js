@@ -1,8 +1,8 @@
 import React, { useState } from 'react'; 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
 import Navbar from './Navbar'; 
-import HomePage from './HomePage'; 
-import TransactionForm from './TransactionForm';
+import Transaction from './Transaction'; 
+import Withdraw from './Withdraw';
 import Login from './Login';
 import Welcomepage from './Welcomepage';
 import Footer from './Footer';
@@ -41,8 +41,8 @@ const App = () => {
             <Route 
               path="/" element={<Welcomepage />} 
             /> 
-            <Route path="/HomePage" element={<HomePage accountNumber={accountNumber} balance={balance} transactions={transactions} />} />
-            <Route path="/transactionForm" element={<TransactionForm type="withdraw" onSubmit={handleTransaction} />} />
+            <Route path="/Transaction" element={<Transaction accountNumber={accountNumber} balance={balance} transactions={transactions} />} />
+            <Route path="/Withdraw" element={<Withdraw type="withdraw" onSubmit={handleTransaction} />} />
             <Route path="/Login" element={<Login />} />
             <Route path="/deposit" element={<Deposit type="deposit" onSubmit={handleTransaction} />} />
             <Route path="/ParentComponent" element={<ParentComponent />} />

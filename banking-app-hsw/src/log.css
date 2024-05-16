@@ -2,7 +2,7 @@
     width: 50%;
     margin: 0 auto; 
     padding: 40px;
-    margin-top: 130px;
+    margin-top: 25px;
 }
 
 .text{
@@ -15,5 +15,5 @@
     background-image: url('skyline.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh; 
+    height: 65vh; 
 }

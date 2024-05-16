@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import Table from 'react-bootstrap/Table';
 import './home.css';
 
-const HomePage = ({ accountNumber, balance, transactions }) => { 
+const Transaction = ({ accountNumber, balance, transactions }) => { 
     return ( 
         <div> 
             <div className='text'>
-            <h4 class = 'display-6'>Do you need you can get earn the money back in every tansaction?</h4>
+            <h4 class = 'display-6'>Do you know you can earn the money back in every tansaction?</h4>
             </div>
             <div className='accounttext'>
             <p><strong>Account Number:</strong> {accountNumber}</p> 
@@ -19,7 +19,7 @@ const HomePage = ({ accountNumber, balance, transactions }) => {
                     Deposit 
                 </Link> 
                 {/* Link to Withdraw page */} 
-                <Link to="/TransactionForm" className="btn btn-outline-secondary"> 
+                <Link to="/Withdraw" className="btn btn-outline-secondary"> 
                     Withdraw 
                 </Link> 
             </div> 
@@ -55,7 +55,7 @@ const HomePage = ({ accountNumber, balance, transactions }) => {
     ); 
 }; 
 
-export default HomePage;
+export default Transaction;
 
 
 

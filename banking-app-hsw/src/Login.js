@@ -2,10 +2,15 @@ import React from 'react';
 import './log.css';
 import Background from './skyline.jpg';
 import { Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const Login = () => {
     return (
-        
+      <row>
+      <Container fluid>
+      <Col md={0} ></Col>
+      <Col md={20}>
         <form>
         <div class="bg-image"> 
         <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -18,7 +23,7 @@ const Login = () => {
           <input type="password" class="form-control" id="exampleInputPassword1"  />
           <br></br>
           <br></br>
-          <Link to="/HomePage">
+          <Link to="/Transaction">
         <button type="submit" class="btn btn-secondary" >Login</button>
         </Link>
         <br></br>
@@ -29,7 +34,9 @@ const Login = () => {
         </div>
         </div>
       </form>
-    
+      </Col>
+            </Container>
+            </row>
 
     );
 };

@@ -1,16 +1,16 @@
-// ParentComponent.js
+
 import React from 'react';
-import TransactionForm from './TransactionForm';
+import Withdraw from './Withdraw';
 
 const ParentComponent = () => {
     const handleSubmit = (transactionData) => {
-        // Handle form submission logic here
+        
         console.log("Transaction data submitted:", transactionData);
     };
 
     return (
         <div>
-            <TransactionForm type="deposit" onSubmit={handleSubmit} />
+            <Withdraw type="deposit" onSubmit={handleSubmit} />
         </div>
     );
 };
